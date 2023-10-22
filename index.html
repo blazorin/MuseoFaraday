@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alberto Romero">
+    <title>Museo de las Comunicaciones - Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icons/favicon-black.ico"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__border">
+                <div class="header__icon">
+                    <a href="#banner">
+                        <img src="img/icons/museum-white.png" alt="img" class="header__icon">
+                    </a>
+                </div>
+                <nav class="header__buttons">
+                    <a class="menu__icon" onclick="showSideMenu()"></a>
+                    <a href="#banner" class="header__button tab-active">Inicio</a>
+                    <a href="#exhibits" class="header__button">Exposiciones</a>
+                    <a href="#museum" class="header__button">Reservas</a>
+                    <a href="#footer" class="header__button">Contacto</a>
+                </nav>
+                <div id="side-menu" class="side-nav" onclick="hideSideMenu()">
+                    <a class="close">&times;</a>
+                    <a href="#banner" class="tab-active">Inicio</a>
+                    <a href="#exhibits">Exposiciones</a>
+                    <a href="#museum">Reservas</a>
+                    <a href="#footer">Contacto</a>
+               </div>
+            </div>
+        </header>
+        <main class="main">
+
+            <div class="banner" id="banner">
+                <div class="banner__background">
+                    <div class="banner__border">
+                        <div class="banner__title">
+                            Museo de la Comunicación
+                        </div>
+                        <div class="banner__text">
+                            Exposiciones de la historia de la Comunicación, una visión clara del progreso en telecomunicaciones desde mediados del siglo XX hasta el día de hoy.</div>
+                        <div class="banner__buttons">
+                            <button class="banner__button" >
+                                <a href="#exhibits">Exposiciones</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exhibits" id="exhibits">
+                <div class="exhibits__border _content">
+                    <div class="exhibits__title">
+                        Exposiciones del Museo
+                    </div>
+                    <div class="exhibits__block">
+                        <div class="block__content">
+                            <div class="block__inner">
+                                <div class="block__title">
+                                    <a href="radio.html" class="block__title">Radio</a>
+                                </div>
+                                <div class="block__item">
+                                    <div><img src="img/icons/dark.jpg" alt="" class="block__dark"></div>
+                                    <div><img src="img/window__icons/radio/11.jpg" alt="" class="block__img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__content">
+                            <div class="block__inner">
+                                <div class="block__title">
+                                    <a href="telefono.html" class="block__title">Teléfono</a>
+                                </div>
+                                <div class="block__item">
+                                    <div><img src="img/icons/dark.jpg" alt="" class="block__dark"></div>
+                                    <div><img src="img/window__icons/phone/3.jpg" alt="" class="block__img"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__content">
+                            <div class="block__inner">
+                                <div class="block__title">
+                                    <a href="television.html" class="block__title">Televisión</a>
+                                </div>
+                                <div class="block__item">
+                                    <div><img src="img/icons/dark.jpg" alt="" class="block__dark"></div>
+                                    <div><img src="img/window__icons/tv/6.jpg" alt="" class="block__img"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="museum" id="museum">
+                <div class="museum__border _content">
+                    <div class="museum__item">
+                        <div class="museum__title">
+                            Entradas
+                        </div>
+                        <button class="banner__button" >
+                            <a href="tickets.html">Reservar</a>
+                        </button>
+                    </div>
+                    <div class="museum__item" style="margin-left: 4rem;">
+                        <div class="museum__img">
+                            <img src="img/windows/faraday-expo.jpg" alt="Exposición Guiada" class="museum__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <footer class="footer" id="footer">
+            <div class="footer">
+                <div class="footer__border">
+                    <div class="footer__title">
+                        Envía tus sugerencias a <a href="mailto:sugerencias@museo.es">sugerencias@museo.es</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
